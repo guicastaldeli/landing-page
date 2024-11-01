@@ -1,0 +1,338 @@
+$dfFont: 'Helvetica', 'Arial', sans-serif;
+
+/* bg color */
+   html, body {
+    background-color: rgb(28, 28, 28);
+   }
+/* */
+
+/* Main Text */
+    #m-t-d-- {
+        position: absolute;
+
+        top: 12rem;
+        left: 26rem;
+
+        width: 35rem;
+
+        p {
+            font-family: $dfFont;
+            font-size: 34px;
+            font-weight: bolder;
+    
+            color: rgb(253, 253, 253);
+        }  
+    }
+/* */
+
+/* Register */
+    /* Section */
+        #i-sec-- {
+            position: absolute;
+
+            top: 8rem;
+            left: 75rem;
+
+            width: 30rem;
+            height: 30rem;
+        }
+    /* */
+
+    /* div */
+        #s-i-- {
+            position: absolute;
+
+            width: 30rem;
+            height: 35rem;
+
+            background-color: rgb(42, 42, 42);
+
+            border: 1px solid rgb(58, 58, 58);
+            border-radius: 3px;
+
+            display: flex;
+            flex-direction: column;
+
+            gap: 1.5rem;
+        }
+    /* */
+
+    /* Inputs */
+        input {
+            position: relative;
+            
+            left: 0.6rem;
+
+            width: 95%;
+            height: 2rem;
+
+            background-color: rgb(47, 47, 47);
+
+            border: 1px solid rgb(58, 58, 58);
+            border-radius: 3px;
+
+            font-family: $dfFont;
+            
+            color: rgb(230, 230, 230);
+
+            /* hover */
+                transition: box-shadow 0.08s ease, background-color 0.08s ease;
+
+                &:hover {
+                    background-color: rgb(56, 56, 56);
+                    
+                    box-shadow: 0px 2px 0px rgb(71, 71, 71);
+                }
+            /* */
+
+            /* selected */
+                &:focus {
+                    outline: 1px solid rgb(66, 100, 134);
+
+                    /* hover */
+                        transition: box-shadow 0.08s ease;
+
+                        &:hover {
+                            box-shadow: 0px 3px 0px rgb(44, 66, 88);
+                        }
+                    /* */
+                }
+            /* */
+        }
+        
+        /* celular input */
+            #ddd-- {
+                user-select: none;
+
+                position: absolute;
+
+                background-color: rgb(47, 47, 47);
+
+                width: 17.8%;
+                height: 2.11rem;
+
+                top: 15.41rem;
+                left: 0.6rem;
+
+                border: 1px solid rgb(58, 58, 58);
+                border-radius: 3px;
+
+                /* p */
+                    p {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        position: relative;
+                        top: -0.5rem;
+
+                        font-family: $dfFont;
+                        font-weight: bold;
+                        color: #757575;
+                    }
+                /* */
+            }
+
+            #i-cn-- {
+                width: 75%;
+                left: 6.5rem;
+            }
+        /* */
+
+        /* submit input */
+            #i-sbmt-- {
+                position: absolute;
+
+                top: 28.5rem;
+
+                width: 96.2%;
+                height: 5rem;
+
+                font-size: 24px;
+                font-weight: bolder;
+
+                color: rgb(230, 230, 230);
+
+                background-color: rgb(66, 100, 134);
+
+                border: 1px solid rgb(36, 59, 80);
+
+                text-shadow: 0px 2px 0px #00000018;
+
+                outline: none;
+
+                /* hover */
+                    transition: background-color 0.08s ease, text-shadow 0.08s ease, box-shadow 0.08s ease, border 0.08s ease;
+
+                    &:hover {
+                        cursor: pointer;
+
+                        background-color: rgb(53, 82, 111);
+
+                        border: 1px solid rgb(31, 50, 68);
+                        
+                        box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.075);
+
+                        text-shadow: 0px 2px 0px #0000002f;
+                    }
+                /* */
+            }
+        /* */
+
+        /* error */
+            .i-err- {
+                border: 1px solid rgb(189, 1, 1);
+
+                /* hover */
+                    &:hover {
+                        box-shadow: 0px 2px 0px rgb(138, 0, 0);
+                    }
+                /* */
+
+                /* focus */
+                    transition: box-shadow 0.08s ease;
+                    
+                    &:focus {
+                        outline: 1px solid rgb(189, 1, 1);
+
+                        /* hover */
+                            &:hover {
+                                box-shadow: 0px 3px 0px rgb(138, 0, 0);
+                            }
+                        /* */
+                    }
+                /* */
+            }
+        /* */
+    /* */
+
+    /* Labels */
+        label {
+            position: relative;
+            left: 0.6rem;
+            top: 1rem;
+
+            display: flex;
+            flex-direction: column;
+            
+            color: rgb(230, 230, 230);
+
+            font-family: $dfFont;
+            text-shadow: 0px 2px 0px rgb(0, 0, 0);
+            
+            font-size: 16px;
+            font-weight: bolder;
+
+            width: fit-content;
+
+            cursor: text;
+        }
+
+        /* error */
+            .l-err- {
+                color: rgb(189, 1, 1);
+            }
+        /* */
+    /* */
+
+    /* recaptcha */
+        .g-recaptcha {
+            position: absolute;
+
+            left: 5.6rem;
+            top: 20.7rem;
+        }
+
+        /* error */
+            .g-r-b-err- {
+                width: 18.87rem;
+                height: 4.75rem;
+
+                border: 1px solid rgb(189, 1, 1);
+                border-radius: 3px;
+            }
+        /* */
+    /* */
+/* */
+
+/* footer */
+    footer {
+        position: absolute;
+        top: 48rem;
+        left: 0;
+
+        width: 100%;
+        height: 20rem;
+
+        background-color: rgb(77, 77, 77);
+
+        border-radius: 3px;
+
+        /* items */
+            #items-- {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                gap: 15rem;
+
+                p {
+                    font-family: $dfFont;
+
+                    font-weight: bold;
+
+                    color: rgb(195, 195, 195);
+                }
+
+                div {
+                    position: relative;
+                    top: 3.5rem;
+
+                    width: 20rem;
+                }
+
+                img {
+                    position: absolute;
+
+                    width: 5rem;
+
+                    top: 1.5rem;
+                    left: -6rem;
+                }
+            }
+        /* */
+
+        /* copyright */
+            #cr-- {
+                position: absolute;
+                top: 16rem;
+
+                width: 100%;
+                height: 4rem;
+
+                background-color: rgb(48, 48, 48);
+
+                justify-content: center;
+                align-items: center;
+                display: flex;
+
+                gap: 2rem;
+
+                p {
+                    font-family: $dfFont;
+                    font-weight: bolder;
+
+                    color: rgb(195, 195, 195);
+                }
+
+                img {
+                    width: 5rem;
+                }
+
+                #logo-- {
+                    cursor: pointer;
+                }
+            }
+        /* */
+    }
+/* */
